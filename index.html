@@ -1,68 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>donkyshon
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="donkyshon, Donkyshon">
-    <meta name="language" content="English">
-    <meta name="description" content="donkyshon website"/>
-    <meta name="author" content="Donkyshon"/>
-    <meta content="#ffffff" data-react-helmet="true" name="theme-color" />
-    <meta content="./assets/img/avatar_gif.gif" property="og:image" />
-    <link rel="shortcut icon" href="./assets/img/avatar_2.ico" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="./assets/css/style.css" rel="stylesheet">
-    <link href="./assets/css/font.css" rel="stylesheet">
-    <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
-    <title>Donkyshon</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <script type="module" src="https://cdn.jsdelivr.net/npm/media-chrome@0/+esm"></script>
-
-    <!DOCTYPE html>
-  </head>
-  <body>
-    <div class="preloader">
-        <div class="preloader-content">
-            <div class="preloader-content_button">
-                ⠿
-            </div>
-        </div>
-    </div>
-    <div class="main_container_video">
-        <div id="player"></div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="content">
-                <div class="content-logo">
-                    <img src="./assets/img/avatar.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/lanyard.js"></script>
+    <link rel="icon" href="./assets/favicon.gif">
+    <title>donkyshon</title>
+    <meta property="og:title" content="donkyshon">
+    <meta property="og:url" content="https://donkyshon.github.io/">
+    <meta property="og:image" content="https://raw.githubusercontent.com/donkyshon/donkyshon.github.io/main/assets/ogimage.gif">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#080808">
+    <meta property="og:description" content="rober inside">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <div class="card-title">@donkyshon > home</div>
+            <div class="user-profile">
+                <div class="Profile-pic">
+                    <img id="pfp" src="assets/loader.gif" alt="">
+                    <div id="status-dot" aria-label="Unknown"></div>
                 </div>
-                <div class="content-text">
-                    Donkyshon
-                </div>
-                <div class="content-links">
-                    <a href="https://github.com/donkyshon" target="_blank">
-                        <i class="fab fa-github"></i>
-                        Github
-                    </a>
-                    <a href="https://discord.gg/bBrRx4SaJn" target="_blank">
-                        <i class="fab fa-discord"></i>
-                        Discord of my Minecraft project
-                    </a>
-                    <a href="https://telegram.me/donkyshon" target="_blank">
-                        <i class="fab fa-telegram-plane"></i>
-                        Telegram
-                    </a>
+                <div class="user-info">
+                    <div id="username">Loading...</div>
+                    <div id="status"></div>
+                    <div id="status2">unknown</div>
+                    <div class="connections">
+                        <a title="github" href="https://github.com/donkyshon"><img class="connection-icon" src="assets/connections/github.svg" alt=""></a>
+                        <a title="donkyshon" href="https://discord.com/users/857323831500996618/"><img class="connection-icon" src="assets/connections/support.png" alt=""></a>
+						<a title="my minecraft server (ru language)" href="https://discord.gg/bBrRx4SaJn"> <img class="connection-icon" src="assets/connections/discord.svg" alt=""></a>
+						<a title="telegram" href="https://t.me/donkyshon"><img class="connection-icon" src="assets/connections/telegram.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="activity card">
+            <div class="card-title">@donkyshon > activity</div>
+            <div class="activity-wrapper">
+			<div class="activity-images">
+<img id="activity-big-image" src="assets/loader.gif" alt="">
+				<img id="activity-small-image" src="assets/loader.gif" alt="">
+</div>
+                
+                <div class="activity-info">
+				<div id="activity-name">loading...</div>
+                    <div id="activity-state">loading...</div>
+                    <div id="activity-detail">loading...</div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">@donkyshon > about me</div>
+            <div class="about-me">
+                <header class="heading">about me</header>
+                <div class="bio">
+                    <ul>
+					<li>ϡ neuro enthusiast</li>
+					<li>ϡ minecraft mod dev</li>
+                    <li>ϡ frontend & backend</li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="./assets/js/main.js"></script>
-    <script src="https://kit.fontawesome.com/b617dc6679.js" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
