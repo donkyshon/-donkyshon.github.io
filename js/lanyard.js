@@ -75,7 +75,7 @@ async function setUsername() {
             }
         }
     } = await fetchResponse(USERID);
-    username.innerHTML = `${user}&#8724;#&#8724;${discriminator}`;
+    username.innerHTML = `${user}&#8239;#&#8239;${discriminator}`;
 }
 async function setStatus() {
     const {
