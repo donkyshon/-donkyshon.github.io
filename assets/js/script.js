@@ -54,6 +54,7 @@ modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
 
+
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
@@ -111,8 +112,6 @@ for (let i = 0; i < filterBtn.length; i++) {
   });
 
 }
-
-
 
 // Sample project data
 const projectsData = [
@@ -203,31 +202,32 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 const data = [
   {
-    src: "./assets/images/photos/Great Smoky Mountain/DSCF8748.jpg",
-    alt: "Great Smoky Mountain",
-    category: "Travel",
-    date: "Oct 22, 2023",
-    title: "Great Smoky Mountain",
-    text: "The name \"Smoky\" comes from the natural fog that often hangs over the range and presents as large smoke plumes from a distance."
+    src: "./assets/images/photos/Tokyo/1.png",
+    alt: "Tokyo",
+    category: "Moddeling",
+    date: "Dec 1, 2022",
+    title: "Tokyo",
+    text: "One of my first forays into porting and optimizing .OBJs into the worlds of minecraft."
   },
   {
-    src: "./assets/images/photos/Duke/DUKE Fall 01.jpg",
-    alt: "Duke Fall 2022",
-    category: "Activity",
+    src: "./assets/images/photos/Room/1.png",
+    alt: "Room 2022",
+    category: "Moddeling",
     date: "Oct 15, 2022",
-    title: "Duke Fall 2022",
-    text: "The first fall at Duke University. As the maple leaves turn red, the chapel view becomes more beautiful."
+    title: "Room 2022",
+    text: "."
   }
 
 ];
 
 
 const folderMapping = {
-  "Duke Fall 2022": "Duke",
+  "Room": "Room",
+  "Tokyo": "Tokyo"
 };
 
 // Get the ul element where the list items will be added
-const ul = document.getElementById("showcase-list");
+const ul = document.getElementById("photography-list");
 
 // Get the pop-up elements
 const popupContainer = document.getElementById("popup-container");
@@ -265,21 +265,21 @@ function closePopup() {
 // Loop through the data and generate list items
 data.forEach(item => {
   const li = document.createElement("li");
-  li.className = "showcase-post-item";
+  li.className = "photography-post-item";
 
   li.innerHTML = `
       <a href="#">
-          <figure class="showcase-banner-box">
+          <figure class="photography-banner-box">
               <img src="${item.src}" alt="${item.alt}" loading="lazy">
           </figure>
-          <div class="showcase-content">
-              <div class="showcase-meta">
-                  <p class="showcase-category">${item.category}</p>
+          <div class="photography-content">
+              <div class="photography-meta">
+                  <p class="photography-category">${item.category}</p>
                   <span class="dot"></span>
                   <time datetime="2022-02-23">${item.date}</time>
               </div>
-              <h3 class="h3 showcase-item-title">${item.title}</h3>
-              <p class="showcase-text">${item.text}</p>
+              <h3 class="h3 photography-item-title">${item.title}</h3>
+              <p class="photography-text">${item.text}</p>
           </div>
       </a>
   `;

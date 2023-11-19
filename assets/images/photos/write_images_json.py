@@ -5,7 +5,7 @@ import json
 def get_image_files(folder_path):
     image_files = []
     for filename in os.listdir(folder_path):
-        if filename.lower().endswith((".jpg", ".jpeg")):
+        if filename.lower().endswith((".jpg", ".jpeg",".png")):
             image_files.append(filename)
     return image_files
 
